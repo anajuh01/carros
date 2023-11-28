@@ -58,6 +58,7 @@ a{
 
  .luxuosos{
     background: var(--dark-cyan);
+    border-radius: 0 0 8px 8px;
  }
 
 .sedans a{
@@ -68,5 +69,33 @@ a{
 }
 .luxuosos a{
     color: var(--dark-cyan);
-    border-radius: 0 0 8px 8px;
+}
+
+@media(min-width: 920px) {
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+
+    }
+    main {
+        display: flex;
+        max-width: 57.5rem;
+    }
+    p{
+        margin-bottom: 5.25 ;
+    }
+    a:hover {
+        background: transparent;
+        color: var(--gray);
+    }
+
+    .sedans{
+        border-radius: 8px 8px 0 0;  
+
+    }
+    .luxuosos{
+        border-radius: 8px 8px 0 0;
+    }
 }
